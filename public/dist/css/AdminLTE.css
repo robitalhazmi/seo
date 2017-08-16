@@ -28,7 +28,7 @@ body {
   height: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .wrapper:before,
 .wrapper:after {
@@ -472,14 +472,14 @@ a:focus {
 }
 .user-panel > .image > img {
   width: 100%;
-  max-width: 45px;
+  max-width: 60px;
   height: auto;
 }
 .user-panel > .info {
   padding: 5px 5px 5px 15px;
   line-height: 1;
   position: absolute;
-  left: 55px;
+  left: 70px;
 }
 .user-panel > .info > p {
   font-weight: 600;
@@ -650,7 +650,6 @@ a:focus {
 .sidebar-menu,
 .main-sidebar .user-panel,
 .sidebar-menu > li.header {
-  white-space: nowrap;
   overflow: hidden;
 }
 .sidebar-menu:hover {
@@ -1534,7 +1533,6 @@ a:focus {
   margin-bottom: 20px;
   width: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  overflow-x: auto;
 }
 .box.box-primary {
   border-top-color: #3c8dbc;

@@ -35,7 +35,7 @@
       overflow-x: auto;
       padding-left: 0px;
       margin-left: 15px;
-      width: 98.62%;
+      width: 97.27%;
     }
     th {
       vertical-align: inherit !important;
@@ -43,7 +43,7 @@
       color: #fff;
     }
     :after {
-      bottom: 29px !important;
+      bottom: 19px !important;
     }
   </style>
 @endsection
@@ -54,13 +54,13 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Majestic
+        Ahrefs
         <small>advanced tables</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Tables</a></li>
-        <li class="active">Majestic</li>
+        <li class="active">A Haref</li>
       </ol>
     </section>
 
@@ -70,7 +70,7 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">Data SEO dari Majestic</h3>
+              <h3 class="box-title">Data SEO dari Ahrefs</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body" id="overflow">
@@ -78,55 +78,48 @@
                 <thead>
                 <tr>
                   <th>Number</th>
-                  <th>Item</th>
-                  <th>Status</th>
-                  <th>External Backlinks</th>
-                  <th>External Backlinks EDU</th>
-                  <th>Referring Domains</th>
-                  <th>Referring Domains EDU</th>
-                  <th>Class C Subnets</th>
-                  <th>Indexed URLs</th>
-                  <th>Trust Flow</th>
-                  <th>Citation Flow</th>
+                  <th>Target</th>
+                  <th>Domains</th>
+                  <th>Ref .edu domains</th>
+                  <th>Ref IPs</th>
+                  <th>Ref SubNets</th>
+                  <th>Linked Domains</th>
+                  <th>Total Backlinks</th>
+                  <th>Total Traffic</th>
                 </tr>
                 </thead>
                 <tbody>
                   @foreach ($datas as $data)
                     <tr>
                       <td>{{ $data->id }}</td>
-                      <td>{{ $data->item }}</td>
-                      <td>{{ $data->status }}</td>
-                      <td>{{ $data->external_backlinks }}</td>
-                      <td>{{ $data->external_backlinks_edu }}</td>
-                      <td>{{ $data->referring_domains }}</td>
-                      <td>{{ $data->referring_domains_edu }}</td>
-                      <td>{{ $data->class_c_subnets }}</td>
-                      <td>{{ $data->indexed_urls }}</td>
-                      <td>{{ $data->trust_flow }}</td>
-                      <td>{{ $data->citation_flow }}</td>
+                      <td>{{ $data->target }}</td>
+                      <td>{{ $data->domains }}</td>
+                      <td>{{ $data->ref_edu_domains }}</td>
+                      <td>{{ $data->ref_ips }}</td>
+                      <td>{{ $data->ref_subnets }}</td>
+                      <td>{{ $data->linked_domains }}</td>
+                      <td>{{ $data->total_backlinks }}</td>
+                      <td>{{ $data->total_traffic }}</td>
                     </tr>
                   @endforeach
                 </tbody>
                 <tfoot>
                 <tr>
                   <th>Number</th>
-                  <th>Item</th>
-                  <th>Status</th>
-                  <th>External Backlinks</th>
-                  <th>External Backlinks EDU</th>
-                  <th>Referring Domains</th>
-                  <th>Referring Domains EDU</th>
-                  <th>Class C Subnets</th>
-                  <th>Indexed URLs</th>
-                  <th>Trust Flow</th>
-                  <th>Citation Flow</th>
+                  <th>Target</th>
+                  <th>Domains</th>
+                  <th>Ref .edu domains</th>
+                  <th>Ref IPs</th>
+                  <th>Ref SubNets</th>
+                  <th>Linked Domains</th>
+                  <th>Total Backlinks</th>
+                  <th>Total Traffic</th>
                 </tr>
                 </tfoot>
               </table>
             </div>
             <!-- /.box-body -->
           </div>
-          <!-- /.box -->
         </div>
         <!-- /.col -->
       </div>
@@ -170,9 +163,9 @@
 
   <script>
     var currentURL = window.location.pathname.toString();
-    if (currentURL = 'majestic') {
+    if (currentURL = '/aharef') {
       $('li#table').addClass('active menu-open')
-      $('li#majestic').addClass('active')
+      $('li#hover').addClass('active')
     }
   </script>
 @endsection

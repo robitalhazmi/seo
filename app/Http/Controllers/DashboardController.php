@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Majestic_table;
-
+use App\Majestic;
+use App\Href;
 
 class DashboardController extends Controller
 {
@@ -20,7 +20,13 @@ class DashboardController extends Controller
 
   public function getMajestic()
   {
-    $datas = Majestic_table::get();
+    $datas = Majestic::get();
     return view('majestic', compact('datas'));
+  }
+
+  public function getHover()
+  {
+    $datas = Href::get();
+    return view('a_haref', compact('datas'));
   }
 }

@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Majestic_table extends Model
+class Majestic extends Model
 {
   protected $fillable = [
     'id',
@@ -12,11 +12,8 @@ class Majestic_table extends Model
     'status',
     'external_backlinks',
     'external_backlinks_edu',
-    'external_backlinks_gov',
     'referring_domains',
     'referring_domains_edu',
-    'referring_domains_gov',
-    'ip_addresses',
     'class_c_subnets',
     'indexed_urls',
     'trust_flow',
