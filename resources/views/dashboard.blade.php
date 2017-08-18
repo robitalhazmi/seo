@@ -1,23 +1,23 @@
 @extends('layouts.layout')
 
 @section('title')
-  AdminLTE 2 | Dashboard
+  Dashboard | SEO-UNAIR
 @endsection
 
 @section('link')
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="public/bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="public/dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -376,7 +376,7 @@
                         <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="public/dist/img/user1-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         Is this template really for free? That's unbelievable!
@@ -392,7 +392,7 @@
                         <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="public/dist/img/user3-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         You better believe it!
@@ -408,7 +408,7 @@
                         <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user1-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="public/dist/img/user1-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         Working with AdminLTE on a great new app! Wanna join?
@@ -424,7 +424,7 @@
                         <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
                       </div>
                       <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="dist/img/user3-128x128.jpg" alt="message user image">
+                      <img class="direct-chat-img" src="public/dist/img/user3-128x128.jpg" alt="message user image">
                       <!-- /.direct-chat-img -->
                       <div class="direct-chat-text">
                         I would love to.
@@ -441,7 +441,7 @@
                     <ul class="contacts-list">
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user1-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user1-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -456,7 +456,7 @@
                       <!-- End Contact Item -->
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user7-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user7-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -471,7 +471,7 @@
                       <!-- End Contact Item -->
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user3-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user3-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -486,7 +486,7 @@
                       <!-- End Contact Item -->
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user5-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user5-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -501,7 +501,7 @@
                       <!-- End Contact Item -->
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user6-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user6-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -516,7 +516,7 @@
                       <!-- End Contact Item -->
                       <li>
                         <a href="#">
-                          <img class="contacts-list-img" src="dist/img/user8-128x128.jpg" alt="User Image">
+                          <img class="contacts-list-img" src="public/dist/img/user8-128x128.jpg" alt="User Image">
 
                           <div class="contacts-list-info">
                                 <span class="contacts-list-name">
@@ -569,42 +569,42 @@
                 <div class="box-body no-padding">
                   <ul class="users-list clearfix">
                     <li>
-                      <img src="dist/img/user1-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user1-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Alexander Pierce</a>
                       <span class="users-list-date">Today</span>
                     </li>
                     <li>
-                      <img src="dist/img/user8-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user8-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Norman</a>
                       <span class="users-list-date">Yesterday</span>
                     </li>
                     <li>
-                      <img src="dist/img/user7-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user7-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Jane</a>
                       <span class="users-list-date">12 Jan</span>
                     </li>
                     <li>
-                      <img src="dist/img/user6-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user6-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">John</a>
                       <span class="users-list-date">12 Jan</span>
                     </li>
                     <li>
-                      <img src="dist/img/user2-160x160.jpg" alt="User Image">
+                      <img src="public/dist/img/user2-160x160.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Alexander</a>
                       <span class="users-list-date">13 Jan</span>
                     </li>
                     <li>
-                      <img src="dist/img/user5-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user5-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Sarah</a>
                       <span class="users-list-date">14 Jan</span>
                     </li>
                     <li>
-                      <img src="dist/img/user4-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user4-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Nora</a>
                       <span class="users-list-date">15 Jan</span>
                     </li>
                     <li>
-                      <img src="dist/img/user3-128x128.jpg" alt="User Image">
+                      <img src="public/dist/img/user3-128x128.jpg" alt="User Image">
                       <a class="users-list-name" href="#">Nadia</a>
                       <span class="users-list-date">15 Jan</span>
                     </li>
@@ -855,7 +855,7 @@
               <ul class="products-list product-list-in-box">
                 <li class="item">
                   <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
+                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">Samsung TV
@@ -868,7 +868,7 @@
                 <!-- /.item -->
                 <li class="item">
                   <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
+                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">Bicycle
@@ -881,7 +881,7 @@
                 <!-- /.item -->
                 <li class="item">
                   <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
+                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">Xbox One <span
@@ -894,7 +894,7 @@
                 <!-- /.item -->
                 <li class="item">
                   <div class="product-img">
-                    <img src="dist/img/default-50x50.gif" alt="Product Image">
+                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
                   </div>
                   <div class="product-info">
                     <a href="javascript:void(0)" class="product-title">PlayStation 4
@@ -926,28 +926,28 @@
 
 @section('script')
   <!-- jQuery 3 -->
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap 3.3.7 -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- FastClick -->
-  <script src="bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="public/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
-  <script src="dist/js/adminlte.min.js"></script>
+  <script src="public/dist/js/adminlte.min.js"></script>
   <!-- Sparkline -->
-  <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <script src="public/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
   <!-- jvectormap  -->
-  <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-  <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
   <!-- SlimScroll -->
-  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
   <!-- ChartJS -->
-  <script src="bower_components/Chart.js/Chart.js"></script>
+  <script src="public/bower_components/Chart.js/Chart.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="dist/js/pages/dashboard2.js"></script>
+  <script src="public/dist/js/pages/dashboard2.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="dist/js/demo.js"></script>
+  <script src="public/dist/js/demo.js"></script>
   <!-- jQuery Knob -->
-  <script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
+  <script src="public/bower_components/jquery-knob/js/jquery.knob.js"></script>
 
 
   <script>
