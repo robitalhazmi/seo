@@ -126,8 +126,8 @@
           </a>
           <ul class="treeview-menu">
             <li id="majestic"><a href="majestic"><i class="fa fa-circle-o"></i> Majestic</a></li>
-            <li id="hover"><a href="aharef"><i class="fa fa-circle-o"></i> Ahrefs</a></li>
-            {{-- <li id="moz"><a href="#"><i class="fa fa-circle-o"></i></a></li> --}}
+            <li id="ahref"><a href="aharef"><i class="fa fa-circle-o"></i> Ahrefs</a></li>
+            <li id="csv"><a href="csv"><i class="fa fa-circle-o"></i> CSV </a></li>
           </ul>
         </li>
       </ul>

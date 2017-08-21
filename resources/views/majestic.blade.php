@@ -58,7 +58,7 @@
         <small>advanced tables</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/seo/"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">DATA SEO</a></li>
         <li class="active">Majestic</li>
       </ol>

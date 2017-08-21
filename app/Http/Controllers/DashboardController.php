@@ -29,4 +29,9 @@ class DashboardController extends Controller
     $datas = Href::get();
     return view('a_haref', compact('datas'));
   }
+
+  public function getCSV()
+  {
+    return view('csv');
+  }
 }

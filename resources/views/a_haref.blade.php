@@ -58,7 +58,7 @@
         <small>advanced tables</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+        <li><a href="/seo/"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">DATA SEO</a></li>
         <li class="active">Ahrefs</li>
       </ol>
@@ -168,7 +168,7 @@
     var currentURL = window.location.pathname.toString();
     if (currentURL = '/aharef') {
       $('li#table').addClass('active menu-open')
-      $('li#hover').addClass('active')
+      $('li#ahref').addClass('active')
     }
   </script>
 @endsection
