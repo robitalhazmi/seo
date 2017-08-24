@@ -20,6 +20,16 @@
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
 <!--//fonts-->
+<style media="screen">
+	.status_login {
+		color: #fff;
+		margin: 11.7px;
+		font-size: 14px;
+	}
+	.hide {
+		display: none;
+	}
+</style>
 </head>
 <body>
 <div class="agileinfo-dot">
@@ -31,7 +41,8 @@
 		<i class="fa fa-search" aria-hidden="true"></i>
 		<h2 class="sub-head-w3-agileits">Masuk</h2>
 			<div class="login-form">
-				<form action="#" method="post">
+				<form id="login_form" method="post">
+					{{ csrf_field() }}
 					<div class="input">
 						<i class="fa fa-user" aria-hidden="true"></i> <input type="text" class="user" name="username" placeholder="Nama Pengguna" required="" />
 					</div>
@@ -45,6 +56,7 @@
 						<div class="clear"> </div>
 					</div>
 					<input type="submit" value="Masuk">
+					<span id="status_login" class="status_login hide">OK</span><br>
 				</form>
 			</div>
 			<!-- //login -->
@@ -60,5 +72,7 @@
 	</div>
 			<!--//login-->
 </div>
+<script src="public/js/jquery-3.2.1.js"></script>
+<script src="public/js/ajax.js"></script>
 </body>
 </html>
