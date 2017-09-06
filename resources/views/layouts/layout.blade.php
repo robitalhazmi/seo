@@ -16,7 +16,7 @@
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="/seo/" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>S</b>UA</span>
       <!-- logo for regular state and mobile devices -->
@@ -35,13 +35,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="public/dist/img/logo-unair-color.png" class="user-image" alt="User Image">
+              <img src="dist/img/logo-unair-color.png" class="user-image" alt="User Image">
               <span class="hidden-xs">Direktorat Sistem Informasi</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="public/dist/img/logo-unair-color.png" class="img-circle" alt="User Image">
+                <img src="dist/img/logo-unair-color.png" class="img-circle" alt="User Image">
 
                 <p>
                   Direktorat Sistem Informasi
@@ -90,7 +90,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="public/dist/img/logo-unair-color.png" class="img-circle" alt="User Image">
+          <img src="dist/img/logo-unair-color.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Direktorat Sistem Informasi</p>
@@ -113,7 +113,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         <li id="dashboard">
-          <a href="/seo/">
+          <a href="/">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>

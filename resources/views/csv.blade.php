@@ -6,16 +6,16 @@
 
 @section('link')
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="public/dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -111,7 +111,7 @@
             <div class="box-body" id="overflow">
                 <div class="col-md-6">
                   <!-- Button trigger modal -->
-                  <img type="button" class="modal-button btn btn-primary" data-toggle="modal" data-target="#exampleModal" src="public/images/majestic.jpg" alt="majestic" height="200" width="200">
+                  <img type="button" class="modal-button btn btn-primary" data-toggle="modal" data-target="#exampleModal" src="images/majestic.jpg" alt="majestic" height="200" width="200">
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -138,7 +138,7 @@
                 </div>
                 <div class="col-md-6">
                   <!-- Button trigger modal -->
-                  <img type="button" class="modal-button btn btn-primary" data-toggle="modal" data-target="#exampleModal2" src="public/images/aharefs.jpg" alt="majestic" height="200" width="200">
+                  <img type="button" class="modal-button btn btn-primary" data-toggle="modal" data-target="#exampleModal2" src="images/aharefs.jpg" alt="majestic" height="200" width="200">
                   <!-- Modal -->
                   <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -178,17 +178,17 @@
 
 @section('script')
   <!-- jQuery 3 -->
-  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap 3.3.7 -->
-  <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- SlimScroll -->
-  <script src="public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
   <!-- FastClick -->
-  <script src="public/bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
-  <script src="public/dist/js/adminlte.min.js"></script>
+  <script src="dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="public/dist/js/demo.js"></script>
+  <script src="dist/js/demo.js"></script>
   <!-- page script -->
   <script>
     $(function () {

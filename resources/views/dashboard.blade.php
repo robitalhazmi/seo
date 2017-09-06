@@ -6,18 +6,18 @@
 
 @section('link')
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="public/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="public/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="public/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <!-- jvectormap -->
-  <link rel="stylesheet" href="public/bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="public/dist/css/AdminLTE.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="public/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,13 +48,174 @@
 
     <!-- Main content -->
     <section class="content">
+      <div class="col-md-3">
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+            <h3 class="box-title">External Backlinks</h3>
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="external-backlinks" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Class C Subnets</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="class-c-subnets" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+      </div>
+      <div class="col-md-3">
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">External Backlinks EDU</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="external-backlinks-edu" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Indexed URLs</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="indexed-urls" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+      </div>
+      <div class="col-md-3">
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Referring Domains</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="referring-domains" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Trust Flow</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="trust-flow" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+      </div>
+      <div class="col-md-3">
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Referring Domains EDU</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="referring-domains-edu" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+        <!-- Donut chart -->
+        <div class="box box-primary">
+          <div class="box-header with-border">
+            <i class="fa fa-bar-chart-o"></i>
+
+            <h3 class="box-title">Citation Flow</h3>
+
+            <div class="box-tools pull-right">
+              <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+            </div>
+          </div>
+          <div class="box-body">
+            <div id="citation-flow" style="height: 300px;"></div>
+          </div>
+          <!-- /.box-body-->
+        </div>
+        <!-- /.box -->
+      </div>
+      <!-- /.col -->
+
       <div class="row">
         <div class="col-xs-12">
           <div class="box box-solid">
             <div class="box-header">
               <i class="fa fa-bar-chart-o"></i>
 
-              <h3 class="box-title">jQuery Knob Tron Style</h3>
+              <h3 class="box-title">PENJELASAN NILAI SEO</h3>
+
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -69,26 +230,38 @@
                 <div class="col-xs-6 col-md-3 text-center">
                   <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label">data-width="90"</div>
+                  <div class="knob-label"><h3>Citation Flow is one of the Majestic Flow Metrics, which is
+weighted by the number citations to a given URL, or
+Domain.</div>
                 </div>
                 <!-- ./col -->
                 <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="60" data-skin="tron" data-thickness="0.2" data-width="120" data-height="120" data-fgColor="#f56954">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label">data-width="120"</div>
+                  <div class="knob-label"><h3>Trust Flow is one of the Majestic Flow Metrics, which is
+weighted by the number of clicks from a seed set of
+trusted sites to a given URL, or Domain.</div>
                 </div>
                 <!-- ./col -->
                 <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="10" data-skin="tron" data-thickness="0.1" data-width="90" data-height="90" data-fgColor="#00a65a">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label">data-thickness="0.1"</div>
+                  <div class="knob-label"><h3>A backlink is an incoming link from a different website or
+referring domain. Within the SEO industry a "backlink"
+can sometimes be referred to as an "in link".
+</div>
                 </div>
                 <!-- ./col -->
                 <div class="col-xs-6 col-md-3 text-center">
-                  <input type="text" class="knob" value="100" data-skin="tron" data-thickness="0.2" data-angleArc="250" data-angleOffset="-125" data-width="120" data-height="120" data-fgColor="#00c0ef">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
 
-                  <div class="knob-label">data-angleArc="250"</div>
+                  <div class="knob-label"><h3>Referring domain, also known as "ref domain", is a
+website which has a backlink pointing to a page, or link,
+to the site you are analysing.</div>
+
                 </div>
+
+
                 <!-- ./col -->
               </div>
               <!-- /.row -->
@@ -99,16 +272,80 @@
         </div>
         <!-- /.col -->
       </div>
+
+
+      <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box box-solid">
+            <div class="box-header">
+              <i class="fa fa-bar-chart-o"></i>
+
+              <h3 class="box-title">PENJELASAN NILAI SEO 2</h3>
+
+
+              <div class="box-tools pull-right">
+                <button type="button" class="btn btn-default btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-default btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="row">
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label"><h3>The C-subnet count is useful, as it is possible for the
+same class C-subnet to be used by one, or associated
+organisations. For larger sites, counting the unique
+linking relationships across C-subnets can also be useful.</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label"><h3>IndexedURLs: number of indexed (known) URLs on found referring domain - this can be viewed as content size of the domain</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label"><h3>TLD: Top Level Domain extracted from root domain
+</div>
+                </div>
+                <!-- ./col -->
+                <div class="col-xs-6 col-md-3 text-center">
+                  <input type="text" class="knob" value="80" data-skin="tron" data-thickness="0.2" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true">
+
+                  <div class="knob-label"><h3>Referring domain, also known as "ref domain", is a
+website which has a backlink pointing to a page, or link,
+to the site you are analysing.</div>
+
+                </div>
+
+
+                <!-- ./col -->
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+
+
+
       <!-- Info boxes -->
       <div class="row">
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">CPU Traffic</span>
-              <span class="info-box-number">90<small>%</small></span>
-            </div>
+
+
             <!-- /.info-box-content -->
           </div>
           <!-- /.info-box -->
@@ -116,12 +353,9 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="fa fa-google-plus"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">Likes</span>
-              <span class="info-box-number">41,410</span>
-            </div>
+
+
             <!-- /.info-box-content -->
           </div>
           <!-- /.info-box -->
@@ -133,11 +367,10 @@
 
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+
 
             <div class="info-box-content">
-              <span class="info-box-text">Sales</span>
-              <span class="info-box-number">760</span>
+
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -146,11 +379,10 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="info-box">
-            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people-outline"></i></span>
+
 
             <div class="info-box-content">
-              <span class="info-box-text">New Members</span>
-              <span class="info-box-number">2,000</span>
+
             </div>
             <!-- /.info-box-content -->
           </div>
@@ -164,7 +396,7 @@
         <div class="col-md-12">
           <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Monthly Recap Report</h3>
+              <h3 class="box-title">Rekap Grafis SEO UNAIR</h3>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -188,54 +420,52 @@
               <div class="row">
                 <div class="col-md-8">
                   <p class="text-center">
-                    <strong>Sales: 1 Jan, 2014 - 30 Jul, 2014</strong>
+                    <strong>Data Range Periode: DAILY</strong>
                   </p>
 
                   <div class="chart">
                     <!-- Sales Chart Canvas -->
-                    <canvas id="salesChart" style="height: 180px;"></canvas>
+                    <img src="https://majestic.com/charts/v2/backlinks-discovery-chart/unair.ac.id?w=660&h=240&IndexDataSource=F">
                   </div>
                   <!-- /.chart-responsive -->
                 </div>
                 <!-- /.col -->
                 <div class="col-md-4">
                   <p class="text-center">
-                    <strong>Goal Completion</strong>
+                    <strong>Keterangan</strong>
                   </p>
 
                   <div class="progress-group">
-                    <span class="progress-text">Add Products to Cart</span>
-                    <span class="progress-number"><b>160</b>/200</span>
+
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
+
+
+                    </div>
+                    Grafis Real Time SEO MAJESTIC unair.ac.id
+                  </div>
+                  <!-- /.progress-group -->
+                  <div class="progress-group">
+
+
+                    <div class="progress sm">
+                      <div class="progress-bar progress-bar-blue" style="width: 80%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Complete Purchase</span>
-                    <span class="progress-number"><b>310</b>/400</span>
+
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
+
                     </div>
                   </div>
                   <!-- /.progress-group -->
                   <div class="progress-group">
-                    <span class="progress-text">Visit Premium Page</span>
-                    <span class="progress-number"><b>480</b>/800</span>
+
 
                     <div class="progress sm">
-                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <!-- /.progress-group -->
-                  <div class="progress-group">
-                    <span class="progress-text">Send Inquiries</span>
-                    <span class="progress-number"><b>250</b>/500</span>
 
-                    <div class="progress sm">
-                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
                     </div>
                   </div>
                   <!-- /.progress-group -->
@@ -249,36 +479,28 @@
               <div class="row">
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
-                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 17%</span>
-                    <h5 class="description-header">$35,210.43</h5>
-                    <span class="description-text">TOTAL REVENUE</span>
+
                   </div>
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
-                    <span class="description-percentage text-yellow"><i class="fa fa-caret-left"></i> 0%</span>
-                    <h5 class="description-header">$10,390.90</h5>
-                    <span class="description-text">TOTAL COST</span>
+
                   </div>
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block border-right">
-                    <span class="description-percentage text-green"><i class="fa fa-caret-up"></i> 20%</span>
-                    <h5 class="description-header">$24,813.53</h5>
-                    <span class="description-text">TOTAL PROFIT</span>
+
                   </div>
                   <!-- /.description-block -->
                 </div>
                 <!-- /.col -->
                 <div class="col-sm-3 col-xs-6">
                   <div class="description-block">
-                    <span class="description-percentage text-red"><i class="fa fa-caret-down"></i> 18%</span>
-                    <h5 class="description-header">1200</h5>
-                    <span class="description-text">GOAL COMPLETIONS</span>
+
                   </div>
                   <!-- /.description-block -->
                 </div>
@@ -298,335 +520,14 @@
         <!-- Left col -->
         <div class="col-md-8">
           <!-- MAP & BOX PANE -->
-          <div class="box box-success">
-            <div class="box-header with-border">
-              <h3 class="box-title">Visitors Report</h3>
 
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body no-padding">
-              <div class="row">
-                <div class="col-md-9 col-sm-8">
-                  <div class="pad">
-                    <!-- Map will be created here -->
-                    <div id="world-map-markers" style="height: 325px;"></div>
-                  </div>
-                </div>
-                <!-- /.col -->
-                <div class="col-md-3 col-sm-4">
-                  <div class="pad box-pane-right bg-green" style="min-height: 280px">
-                    <div class="description-block margin-bottom">
-                      <div class="sparkbar pad" data-color="#fff">90,70,90,70,75,80,70</div>
-                      <h5 class="description-header">8390</h5>
-                      <span class="description-text">Visits</span>
-                    </div>
-                    <!-- /.description-block -->
-                    <div class="description-block margin-bottom">
-                      <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                      <h5 class="description-header">30%</h5>
-                      <span class="description-text">Referrals</span>
-                    </div>
-                    <!-- /.description-block -->
-                    <div class="description-block">
-                      <div class="sparkbar pad" data-color="#fff">90,50,90,70,61,83,63</div>
-                      <h5 class="description-header">70%</h5>
-                      <span class="description-text">Organic</span>
-                    </div>
-                    <!-- /.description-block -->
-                  </div>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.box-body -->
-          </div>
-          <!-- /.box -->
-          <div class="row">
-            <div class="col-md-6">
-              <!-- DIRECT CHAT -->
-              <div class="box box-warning direct-chat direct-chat-warning">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Direct Chat</h3>
 
-                  <div class="box-tools pull-right">
-                    <span data-toggle="tooltip" title="3 New Messages" class="badge bg-yellow">3</span>
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-box-tool" data-toggle="tooltip" title="Contacts"
-                            data-widget="chat-pane-toggle">
-                      <i class="fa fa-comments"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body">
-                  <!-- Conversations are loaded here -->
-                  <div class="direct-chat-messages">
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="public/dist/img/user1-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Is this template really for free? That's unbelievable!
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="public/dist/img/user3-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        You better believe it!
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message. Default to the left -->
-                    <div class="direct-chat-msg">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                        <span class="direct-chat-timestamp pull-right">23 Jan 5:37 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="public/dist/img/user1-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        Working with AdminLTE on a great new app! Wanna join?
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                    <!-- Message to the right -->
-                    <div class="direct-chat-msg right">
-                      <div class="direct-chat-info clearfix">
-                        <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                        <span class="direct-chat-timestamp pull-left">23 Jan 6:10 pm</span>
-                      </div>
-                      <!-- /.direct-chat-info -->
-                      <img class="direct-chat-img" src="public/dist/img/user3-128x128.jpg" alt="message user image">
-                      <!-- /.direct-chat-img -->
-                      <div class="direct-chat-text">
-                        I would love to.
-                      </div>
-                      <!-- /.direct-chat-text -->
-                    </div>
-                    <!-- /.direct-chat-msg -->
-
-                  </div>
-                  <!--/.direct-chat-messages-->
-
-                  <!-- Contacts are loaded here -->
-                  <div class="direct-chat-contacts">
-                    <ul class="contacts-list">
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user1-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Count Dracula
-                                  <small class="contacts-list-date pull-right">2/28/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">How have you been? I was...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user7-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Sarah Doe
-                                  <small class="contacts-list-date pull-right">2/23/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">I will be waiting for...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user3-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nadia Jolie
-                                  <small class="contacts-list-date pull-right">2/20/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">I'll call you back at...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user5-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Nora S. Vans
-                                  <small class="contacts-list-date pull-right">2/10/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Where is your new...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user6-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  John K.
-                                  <small class="contacts-list-date pull-right">1/27/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Can I take a look at...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                      <li>
-                        <a href="#">
-                          <img class="contacts-list-img" src="public/dist/img/user8-128x128.jpg" alt="User Image">
-
-                          <div class="contacts-list-info">
-                                <span class="contacts-list-name">
-                                  Kenneth M.
-                                  <small class="contacts-list-date pull-right">1/4/2015</small>
-                                </span>
-                            <span class="contacts-list-msg">Never mind I found...</span>
-                          </div>
-                          <!-- /.contacts-list-info -->
-                        </a>
-                      </li>
-                      <!-- End Contact Item -->
-                    </ul>
-                    <!-- /.contatcts-list -->
-                  </div>
-                  <!-- /.direct-chat-pane -->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer">
-                  <form action="#" method="post">
-                    <div class="input-group">
-                      <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                      <span class="input-group-btn">
-                            <button type="button" class="btn btn-warning btn-flat">Send</button>
-                          </span>
-                    </div>
-                  </form>
-                </div>
-                <!-- /.box-footer-->
-              </div>
-              <!--/.direct-chat -->
-            </div>
-            <!-- /.col -->
-
-            <div class="col-md-6">
-              <!-- USERS LIST -->
-              <div class="box box-danger">
-                <div class="box-header with-border">
-                  <h3 class="box-title">Latest Members</h3>
-
-                  <div class="box-tools pull-right">
-                    <span class="label label-danger">8 New Members</span>
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                    </button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i>
-                    </button>
-                  </div>
-                </div>
-                <!-- /.box-header -->
-                <div class="box-body no-padding">
-                  <ul class="users-list clearfix">
-                    <li>
-                      <img src="public/dist/img/user1-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander Pierce</a>
-                      <span class="users-list-date">Today</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user8-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Norman</a>
-                      <span class="users-list-date">Yesterday</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user7-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Jane</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user6-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">John</a>
-                      <span class="users-list-date">12 Jan</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user2-160x160.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Alexander</a>
-                      <span class="users-list-date">13 Jan</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user5-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Sarah</a>
-                      <span class="users-list-date">14 Jan</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user4-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nora</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                    <li>
-                      <img src="public/dist/img/user3-128x128.jpg" alt="User Image">
-                      <a class="users-list-name" href="#">Nadia</a>
-                      <span class="users-list-date">15 Jan</span>
-                    </li>
-                  </ul>
-                  <!-- /.users-list -->
-                </div>
-                <!-- /.box-body -->
-                <div class="box-footer text-center">
-                  <a href="javascript:void(0)" class="uppercase">View All Users</a>
-                </div>
-                <!-- /.box-footer -->
-              </div>
-              <!--/.box -->
-            </div>
-            <!-- /.col -->
-          </div>
-          <!-- /.row -->
 
           <!-- TABLE: LATEST ORDERS -->
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Latest Orders</h3>
+              <h3 class="box-title">Topical Trust Flow</h3>
+              (A measure of how close you are to the most trusted websites in almost one thousand categories.)
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -640,67 +541,67 @@
                 <table class="table no-margin">
                   <thead>
                   <tr>
-                    <th>Order ID</th>
-                    <th>Item</th>
-                    <th>Status</th>
-                    <th>Popularity</th>
+                    <th>No</th>
+                    <th>Category</th>
+                    <th>Score</th>
+                    <th>Percentage</th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td><a href="#">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
+                    <td><a href="#">1</a></td>
+                    <td>Reference / Education</td>
+                    <td><span class="label label-success">38</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">98,87%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="#">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
+                    <td><a href="#">2</a></td>
+                    <td> Regional / Europe</td>
+                    <td><span class="label label-warning">18</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">0,35%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="#">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
+                    <td><a href="#">3</a></td>
+                    <td> World / Bahasa Indonesia</td>
+                    <td><span class="label label-danger">18</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">0,33%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="#">OR7429</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-info">Processing</span></td>
+                    <td><a href="#">4</a></td>
+                    <td> Science / Social Sciences</td>
+                    <td><span class="label label-info">17</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div>
+                      <div class="sparkbar" data-color="#00c0ef" data-height="20">0,17%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="#">OR1848</a></td>
-                    <td>Samsung Smart TV</td>
-                    <td><span class="label label-warning">Pending</span></td>
+                    <td><a href="#">5</a></td>
+                    <td> Arts / Music</td>
+                    <td><span class="label label-warning">14</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">0,04%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="#">OR7429</a></td>
-                    <td>iPhone 6 Plus</td>
-                    <td><span class="label label-danger">Delivered</span></td>
+                    <td><a href="#">6</a></td>
+                    <td> News / Newspapers</td>
+                    <td><span class="label label-danger">14</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">0,02%</div>
                     </td>
                   </tr>
                   <tr>
-                    <td><a href="">OR9842</a></td>
-                    <td>Call of Duty IV</td>
-                    <td><span class="label label-success">Shipped</span></td>
+                    <td><a href="">7</a></td>
+                    <td> Society / Philosophy</td>
+                    <td><span class="label label-success">13</span></td>
                     <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">0,02%</div>
                     </td>
                   </tr>
                   </tbody>
@@ -725,14 +626,15 @@
             <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Inventory</span>
-              <span class="info-box-number">5,200</span>
+              <span class="info-box-text">HISTORIC - EXTERNAL
+BACKLINKS</span>
+              <span class="info-box-number">5,047,235 (5 tahun)</span>
 
               <div class="progress">
                 <div class="progress-bar" style="width: 50%"></div>
               </div>
               <span class="progress-description">
-                    50% Increase in 30 Days
+
                   </span>
             </div>
             <!-- /.info-box-content -->
@@ -742,14 +644,14 @@
             <span class="info-box-icon"><i class="ion ion-ios-heart-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Mentions</span>
-              <span class="info-box-number">92,050</span>
+              <span class="info-box-text">Unique URLs crawled</span>
+              <span class="info-box-number">378,527,832,652</span>
 
               <div class="progress">
                 <div class="progress-bar" style="width: 20%"></div>
               </div>
               <span class="progress-description">
-                    20% Increase in 30 Days
+                    20 May 2017 to 23 Aug 2017
                   </span>
             </div>
             <!-- /.info-box-content -->
@@ -759,14 +661,14 @@
             <span class="info-box-icon"><i class="ion ion-ios-cloud-download-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Downloads</span>
-              <span class="info-box-number">114,381</span>
+              <span class="info-box-text">Unique URLs found</span>
+              <span class="info-box-number">873,379,555,098</span>
 
               <div class="progress">
                 <div class="progress-bar" style="width: 70%"></div>
               </div>
               <span class="progress-description">
-                    70% Increase in 30 Days
+                    20 May 2017 to 23 Aug 201
                   </span>
             </div>
             <!-- /.info-box-content -->
@@ -776,141 +678,26 @@
             <span class="info-box-icon"><i class="ion-ios-chatbubble-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">Direct Messages</span>
-              <span class="info-box-number">163,921</span>
+              <span class="info-box-text">FRESH - EXTERNAL
+BACKLINKS</span>
+              <span class="info-box-number">952,198</span>
 
               <div class="progress">
                 <div class="progress-bar" style="width: 40%"></div>
               </div>
               <span class="progress-description">
-                    40% Increase in 30 Days
+                    All incoming links from other websites
                   </span>
             </div>
             <!-- /.info-box-content -->
           </div>
           <!-- /.info-box -->
 
-          <div class="box box-default">
-            <div class="box-header with-border">
-              <h3 class="box-title">Browser Usage</h3>
 
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <div class="row">
-                <div class="col-md-8">
-                  <div class="chart-responsive">
-                    <canvas id="pieChart" height="150"></canvas>
-                  </div>
-                  <!-- ./chart-responsive -->
-                </div>
-                <!-- /.col -->
-                <div class="col-md-4">
-                  <ul class="chart-legend clearfix">
-                    <li><i class="fa fa-circle-o text-red"></i> Chrome</li>
-                    <li><i class="fa fa-circle-o text-green"></i> IE</li>
-                    <li><i class="fa fa-circle-o text-yellow"></i> FireFox</li>
-                    <li><i class="fa fa-circle-o text-aqua"></i> Safari</li>
-                    <li><i class="fa fa-circle-o text-light-blue"></i> Opera</li>
-                    <li><i class="fa fa-circle-o text-gray"></i> Navigator</li>
-                  </ul>
-                </div>
-                <!-- /.col -->
-              </div>
-              <!-- /.row -->
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer no-padding">
-              <ul class="nav nav-pills nav-stacked">
-                <li><a href="#">United States of America
-                  <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
-                <li><a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
-                </li>
-                <li><a href="#">China
-                  <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
-              </ul>
-            </div>
-            <!-- /.footer -->
-          </div>
-          <!-- /.box -->
 
           <!-- PRODUCT LIST -->
-          <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Recently Added Products</h3>
 
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-              </div>
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              <ul class="products-list product-list-in-box">
-                <li class="item">
-                  <div class="product-img">
-                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Samsung TV
-                      <span class="label label-warning pull-right">$1800</span></a>
-                    <span class="product-description">
-                          Samsung 32" 1080p 60Hz LED Smart HDTV.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Bicycle
-                      <span class="label label-info pull-right">$700</span></a>
-                    <span class="product-description">
-                          26" Mongoose Dolomite Men's 7-speed, Navy Blue.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">Xbox One <span
-                        class="label label-danger pull-right">$350</span></a>
-                    <span class="product-description">
-                          Xbox One Console Bundle with Halo Master Chief Collection.
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-                <li class="item">
-                  <div class="product-img">
-                    <img src="public/dist/img/default-50x50.gif" alt="Product Image">
-                  </div>
-                  <div class="product-info">
-                    <a href="javascript:void(0)" class="product-title">PlayStation 4
-                      <span class="label label-success pull-right">$399</span></a>
-                    <span class="product-description">
-                          PlayStation 4 500GB Console (PS4)
-                        </span>
-                  </div>
-                </li>
-                <!-- /.item -->
-              </ul>
-            </div>
-            <!-- /.box-body -->
-            <div class="box-footer text-center">
-              <a href="javascript:void(0)" class="uppercase">View All Products</a>
-            </div>
+
             <!-- /.box-footer -->
           </div>
           <!-- /.box -->
@@ -926,30 +713,398 @@
 
 @section('script')
   <!-- jQuery 3 -->
-  <script src="public/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap 3.3.7 -->
-  <script src="public/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- FastClick -->
-  <script src="public/bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
-  <script src="public/dist/js/adminlte.min.js"></script>
+  <script src="dist/js/adminlte.min.js"></script>
   <!-- Sparkline -->
-  <script src="public/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+  <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
   <!-- jvectormap  -->
-  <script src="public/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-  <script src="public/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+  <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
   <!-- SlimScroll -->
-  <script src="public/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
   <!-- ChartJS -->
-  <script src="public/bower_components/Chart.js/Chart.js"></script>
+  <script src="bower_components/Chart.js/Chart.js"></script>
   <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-  <script src="public/dist/js/pages/dashboard2.js"></script>
+  <script src="dist/js/pages/dashboard2.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="public/dist/js/demo.js"></script>
+  <script src="dist/js/demo.js"></script>
   <!-- jQuery Knob -->
-  <script src="public/bower_components/jquery-knob/js/jquery.knob.js"></script>
+  <script src="bower_components/jquery-knob/js/jquery.knob.js"></script>
+  <!-- FLOT CHARTS -->
+  <script src="../../bower_components/Flot/jquery.flot.js"></script>
+  <!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
+  <script src="../../bower_components/Flot/jquery.flot.resize.js"></script>
+  <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
+  <script src="../../bower_components/Flot/jquery.flot.pie.js"></script>
+  <!-- Page script -->
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
 
+      var donutData = [
+        { label: '{{ $external_backlinks[0]['item'] }}', data: {{ ($external_backlinks[0]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $external_backlinks[1]['item'] }}', data: {{ ($external_backlinks[1]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $external_backlinks[2]['item'] }}', data: {{ ($external_backlinks[2]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $external_backlinks[3]['item'] }}', data: {{ ($external_backlinks[3]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $external_backlinks[4]['item'] }}', data: {{ ($external_backlinks[4]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#f58231' },
+        { label: '{{ $external_backlinks[5]['item'] }}', data: {{ ($external_backlinks[5]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $external_backlinks[6]['item'] }}', data: {{ ($external_backlinks[6]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $external_backlinks[7]['item'] }}', data: {{ ($external_backlinks[7]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $external_backlinks[8]['item'] }}', data: {{ ($external_backlinks[8]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $external_backlinks[9]['item'] }}', data: {{ ($external_backlinks[9]['external_backlinks']/$external_backlinks_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#external-backlinks', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
 
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+
+    /*
+     * Custom Label formatter
+     * ----------------------
+     */
+    function labelFormatter(label, series) {
+      return '<div style="font-size:10px; text-align:center; padding:2px; color: #000; font-weight: 600;">'
+        + label
+        + '<br>'
+        + Math.round(series.percent) + '%</div>'
+    }
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $external_backlinks_edus[0]['item'] }}', data: {{ ($external_backlinks_edus[0]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $external_backlinks_edus[1]['item'] }}', data: {{ ($external_backlinks_edus[1]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $external_backlinks_edus[2]['item'] }}', data: {{ ($external_backlinks_edus[2]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $external_backlinks_edus[3]['item'] }}', data: {{ ($external_backlinks_edus[3]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $external_backlinks_edus[4]['item'] }}', data: {{ ($external_backlinks_edus[4]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#f58231' },
+        { label: '{{ $external_backlinks_edus[5]['item'] }}', data: {{ ($external_backlinks_edus[5]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $external_backlinks_edus[6]['item'] }}', data: {{ ($external_backlinks_edus[6]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $external_backlinks_edus[7]['item'] }}', data: {{ ($external_backlinks_edus[7]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $external_backlinks_edus[8]['item'] }}', data: {{ ($external_backlinks_edus[8]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $external_backlinks_edus[9]['item'] }}', data: {{ ($external_backlinks_edus[9]['external_backlinks_edu']/$external_backlinks_edu_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#external-backlinks-edu', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $referring_domains[0]['item'] }}', data: {{ ($referring_domains[0]['referring_domains']/$referring_domains_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $referring_domains[1]['item'] }}', data: {{ ($referring_domains[1]['referring_domains']/$referring_domains_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $referring_domains[2]['item'] }}', data: {{ ($referring_domains[2]['referring_domains']/$referring_domains_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $referring_domains[3]['item'] }}', data: {{ ($referring_domains[3]['referring_domains']/$referring_domains_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $referring_domains[4]['item'] }}', data: {{ ($referring_domains[4]['referring_domains']/$referring_domains_total)*100 }}, color: '#f58231' },
+        { label: '{{ $referring_domains[5]['item'] }}', data: {{ ($referring_domains[5]['referring_domains']/$referring_domains_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $referring_domains[6]['item'] }}', data: {{ ($referring_domains[6]['referring_domains']/$referring_domains_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $referring_domains[7]['item'] }}', data: {{ ($referring_domains[7]['referring_domains']/$referring_domains_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $referring_domains[8]['item'] }}', data: {{ ($referring_domains[8]['referring_domains']/$referring_domains_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $referring_domains[9]['item'] }}', data: {{ ($referring_domains[9]['referring_domains']/$referring_domains_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#referring-domains', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $referring_domains_edus[0]['item'] }}', data: {{ ($referring_domains_edus[0]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $referring_domains_edus[1]['item'] }}', data: {{ ($referring_domains_edus[1]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $referring_domains_edus[2]['item'] }}', data: {{ ($referring_domains_edus[2]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $referring_domains_edus[3]['item'] }}', data: {{ ($referring_domains_edus[3]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $referring_domains_edus[4]['item'] }}', data: {{ ($referring_domains_edus[4]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#f58231' },
+        { label: '{{ $referring_domains_edus[5]['item'] }}', data: {{ ($referring_domains_edus[5]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $referring_domains_edus[6]['item'] }}', data: {{ ($referring_domains_edus[6]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $referring_domains_edus[7]['item'] }}', data: {{ ($referring_domains_edus[7]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $referring_domains_edus[8]['item'] }}', data: {{ ($referring_domains_edus[8]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $referring_domains_edus[9]['item'] }}', data: {{ ($referring_domains_edus[9]['referring_domains_edu']/$referring_domains_edu_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#referring-domains-edu', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $class_c_subnets[0]['item'] }}', data: {{ ($class_c_subnets[0]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $class_c_subnets[1]['item'] }}', data: {{ ($class_c_subnets[1]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $class_c_subnets[2]['item'] }}', data: {{ ($class_c_subnets[2]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $class_c_subnets[3]['item'] }}', data: {{ ($class_c_subnets[3]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $class_c_subnets[4]['item'] }}', data: {{ ($class_c_subnets[4]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#f58231' },
+        { label: '{{ $class_c_subnets[5]['item'] }}', data: {{ ($class_c_subnets[5]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $class_c_subnets[6]['item'] }}', data: {{ ($class_c_subnets[6]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $class_c_subnets[7]['item'] }}', data: {{ ($class_c_subnets[7]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $class_c_subnets[8]['item'] }}', data: {{ ($class_c_subnets[8]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $class_c_subnets[9]['item'] }}', data: {{ ($class_c_subnets[9]['class_c_subnets']/$class_c_subnets_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#class-c-subnets', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $indexed_urls[0]['item'] }}', data: {{ ($indexed_urls[0]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $indexed_urls[1]['item'] }}', data: {{ ($indexed_urls[1]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $indexed_urls[2]['item'] }}', data: {{ ($indexed_urls[2]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $indexed_urls[3]['item'] }}', data: {{ ($indexed_urls[3]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $indexed_urls[4]['item'] }}', data: {{ ($indexed_urls[4]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#f58231' },
+        { label: '{{ $indexed_urls[5]['item'] }}', data: {{ ($indexed_urls[5]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $indexed_urls[6]['item'] }}', data: {{ ($indexed_urls[6]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $indexed_urls[7]['item'] }}', data: {{ ($indexed_urls[7]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $indexed_urls[8]['item'] }}', data: {{ ($indexed_urls[8]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $indexed_urls[9]['item'] }}', data: {{ ($indexed_urls[9]['indexed_urls']/$indexed_urls_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#indexed-urls', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $trust_flows[0]['item'] }}', data: {{ ($trust_flows[0]['trust_flow']/$trust_flow_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $trust_flows[1]['item'] }}', data: {{ ($trust_flows[1]['trust_flow']/$trust_flow_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $trust_flows[2]['item'] }}', data: {{ ($trust_flows[2]['trust_flow']/$trust_flow_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $trust_flows[3]['item'] }}', data: {{ ($trust_flows[3]['trust_flow']/$trust_flow_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $trust_flows[4]['item'] }}', data: {{ ($trust_flows[4]['trust_flow']/$trust_flow_total)*100 }}, color: '#f58231' },
+        { label: '{{ $trust_flows[5]['item'] }}', data: {{ ($trust_flows[5]['trust_flow']/$trust_flow_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $trust_flows[6]['item'] }}', data: {{ ($trust_flows[6]['trust_flow']/$trust_flow_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $trust_flows[7]['item'] }}', data: {{ ($trust_flows[7]['trust_flow']/$trust_flow_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $trust_flows[8]['item'] }}', data: {{ ($trust_flows[8]['trust_flow']/$trust_flow_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $trust_flows[9]['item'] }}', data: {{ ($trust_flows[9]['trust_flow']/$trust_flow_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#trust-flow', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
+  <script>
+    $(function () {
+      /*
+       * DONUT CHART
+       * -----------
+       */
+
+      var donutData = [
+        { label: '{{ $citation_flows[0]['item'] }}', data: {{ ($citation_flows[0]['citation_flow']/$citation_flow_total)*100 }}, color: '#e6194b' },
+        { label: '{{ $citation_flows[1]['item'] }}', data: {{ ($citation_flows[1]['citation_flow']/$citation_flow_total)*100 }}, color: '#3cb44b' },
+        { label: '{{ $citation_flows[2]['item'] }}', data: {{ ($citation_flows[2]['citation_flow']/$citation_flow_total)*100 }}, color: '#ffe119' },
+        { label: '{{ $citation_flows[3]['item'] }}', data: {{ ($citation_flows[3]['citation_flow']/$citation_flow_total)*100 }}, color: '#0082c8' },
+        { label: '{{ $citation_flows[4]['item'] }}', data: {{ ($citation_flows[4]['citation_flow']/$citation_flow_total)*100 }}, color: '#f58231' },
+        { label: '{{ $citation_flows[5]['item'] }}', data: {{ ($citation_flows[5]['citation_flow']/$citation_flow_total)*100 }}, color: '#911eb4' },
+        { label: '{{ $citation_flows[6]['item'] }}', data: {{ ($citation_flows[6]['citation_flow']/$citation_flow_total)*100 }}, color: '#46f0f0' },
+        { label: '{{ $citation_flows[7]['item'] }}', data: {{ ($citation_flows[7]['citation_flow']/$citation_flow_total)*100 }}, color: '#f032e6' },
+        { label: '{{ $citation_flows[8]['item'] }}', data: {{ ($citation_flows[8]['citation_flow']/$citation_flow_total)*100 }}, color: '#d2f53c' },
+        { label: '{{ $citation_flows[9]['item'] }}', data: {{ ($citation_flows[9]['citation_flow']/$citation_flow_total)*100 }}, color: '#fabebe' }
+      ]
+      $.plot('#citation-flow', donutData, {
+        series: {
+          pie: {
+            show       : true,
+            radius     : 1,
+            innerRadius: 0.5,
+            label      : {
+              show     : true,
+              radius   : 2 / 3,
+              formatter: labelFormatter,
+              threshold: 0.1
+            }
+
+          }
+        },
+        legend: {
+          show: false
+        }
+      })
+      /*
+       * END DONUT CHART
+       */
+
+    })
+  </script>
   <script>
   var currentURL = window.location.pathname.toString();
   if (currentURL = 'dashboard') {

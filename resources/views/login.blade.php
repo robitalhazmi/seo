@@ -9,11 +9,11 @@
 <!-- //Meta-Tags -->
 
 <!-- Custom Theme files -->
-<link href="public/css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
-<link href="public/css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
 
 <!-- font-awesome-icons -->
-<link href="public/css/font-awesome.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
 <!-- //font-awesome-icons -->
 
 <!--fonts-->
@@ -72,7 +72,7 @@
 	</div>
 			<!--//login-->
 </div>
-<script src="public/js/jquery-3.2.1.js"></script>
-<script src="public/js/ajax.js"></script>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/ajax.js"></script>
 </body>
 </html>

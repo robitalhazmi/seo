@@ -7,7 +7,7 @@ $(document).ready(function() {
 		    data: $('#login_form').serialize(),
 		    success: function (data, status) {
 					if (data.success === true) {
-						location.href = '/seo/';
+						location.href = '/';
 					}
 					else {
 						$('#status_login')[0].className = 'status_login';
